@@ -30,8 +30,9 @@
     </nav>
 
     <section id="hero" class="hero">
-        <div class="hero-bg">
+        <div class="hero-bg" id="heroBg">
             <img src="images/Abraham%20Photo.png" alt="">
+            <span class="hero-view-full">View Full Image</span>
         </div>
         <div class="hero-overlay"></div>
         <div class="container hero-content">
@@ -434,5 +435,14 @@
     </footer>
 
     <script src="js/main.js"></script>
+
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+        </button>
+        <img src="images/Abraham%20Photo.png" alt="Abraham Goshu Habtie">
+    </div>
 </body>
 </html>
