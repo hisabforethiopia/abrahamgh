@@ -359,9 +359,30 @@ body {
 }
 
 .about-grid {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-image img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+}
+
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .about-image {
+        max-width: 350px;
+        margin: 0 auto;
+    }
 }
 
 .about-content h3 {
